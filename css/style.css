@@ -156,13 +156,24 @@ aside .logo-big{
 
 /* --UPGRADE BAR */
 .upgrade-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     height: 82px;
     width: 100%;
-    /* background-color: rgba(0,0,0,.10); */
-    background-color: purple;
+    background-color: rgba(0,0,0,.15);
+}
+
+.upgrade-bar button{
+    padding: 12px 30px;
+    margin-right: 5px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.15)
 }
 
 .container-overflow{
@@ -177,6 +188,7 @@ footer{
     background-color: green;
     /* background-color: #282828; */
 }
+
 
 /* MEDIA QUERIES */
 /* RESPONSIVE SM > 639 */
