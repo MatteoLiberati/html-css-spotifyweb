@@ -77,13 +77,14 @@ aside .playlist{
     align-items: center;
     overflow-y: hidden;
 }
-/* --LOGO */
+/* ---LOGO */
 aside .logo-big{
     width: 120px;
     margin: 10px 15px 20px;
 }
 
-/* --NAVBAR */
+/* ---NAVBAR */
+/* ---PLAYLIST */
 .overflow-playlist{
     overflow-y: auto;
 }
@@ -94,8 +95,8 @@ aside .logo-big{
 
 .top-aside .playlist .create-playlist{
     margin: 10px 0;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: none;
     background-color: #a3a3a3;
     margin-right: 5px;
@@ -124,8 +125,9 @@ aside .logo-big{
     align-items: center;
 }
 
-.bottom-aside a:first-child img{
-    width: 15px;
+.bottom-aside a:first-child i{
+    font-size: .8rem;
+    margin-bottom: 15px;
 }
 
 .bottom-aside a:last-child img{
@@ -145,13 +147,12 @@ aside .logo-big{
     vertical-align: middle;
 }
 
-/* -CONTAINER-CONTENT */
-.container-content{
+/* -MAIN-CONTENT */
+.main-content{
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: yellow;
-    /* background-color: #141922; */
+    background-color: #141922;
 }
 
 /* --UPGRADE BAR */
@@ -176,67 +177,16 @@ aside .logo-big{
     background-color: rgba(0,0,0,.15)
 }
 
+/* --CONTAINER-OVERFLOW-MAIN-CONTENT */
 .container-overflow{
     height: 100%;
     padding-top: 82px;
     overflow-y: auto;
 }
 
-/* FOOTER */
+/* FOOTER PLAYER*/
 footer{
     height: 81px;
     background-color: green;
     /* background-color: #282828; */
-}
-
-
-/* MEDIA QUERIES */
-/* RESPONSIVE SM > 639 */
-@media screen and (min-width:639px){
-    /* UTILITIES */
-    .aside-hidden{
-        display: inline-block;
-    }
-
-    /* ASIDE */
-    aside{
-        width: 280px;
-    }
-
-    .top-aside,
-    .bottom-aside{
-        align-items:flex-start;
-    }
-
-    .top-aside > nav li{
-        padding: 0 15px 0 12px; 
-    }
-
-    aside .top-aside > nav ul li{
-        border-left: 3px solid transparent;
-    }
-
-    aside .top-aside > nav ul li.aside-selected{
-        border-color: #adff2f;
-    }
-
-    .top-aside .playlist,
-    .bottom-aside{
-        padding: 0 15px;
-    }
-
-    /* -LOGO */
-    aside .logo-small{
-        display:none;
-    }
-}
-
-/* RESPONSIVE MD > 768 */
-@media screen and (min-width:768px){
-
-}
-
-/* RESPONSIVE LG > 1200 */
-@media screen and (min-width:1200px){
-
 }

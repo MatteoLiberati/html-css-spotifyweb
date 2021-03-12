@@ -1,0 +1,55 @@
+
+/* MEDIA QUERIES */
+/* RESPONSIVE SM > 639 */
+@media screen and (min-width:639px){
+    /* UTILITIES */
+    .aside-hidden{
+        display: inline-block;
+    }
+
+    /* ASIDE */
+    aside{
+        width: 280px;
+    }
+
+    .top-aside,
+    .bottom-aside{
+        align-items:flex-start;
+    }
+
+    .top-aside > nav li{
+        padding: 0 15px 0 12px; 
+    }
+
+    aside .top-aside > nav ul li{
+        border-left: 3px solid transparent;
+    }
+
+    aside .top-aside > nav ul li.aside-selected{
+        border-color: #adff2f;
+    }
+
+    .top-aside .playlist,
+    .bottom-aside{
+        padding: 0 15px;
+    }
+
+    .bottom-aside a:first-child i{
+        margin-bottom: 5px;
+    }
+
+    /* -LOGO */
+    aside .logo-small{
+        display:none;
+    }
+}
+
+/* RESPONSIVE MD > 768 */
+@media screen and (min-width:768px){
+
+}
+
+/* RESPONSIVE LG > 1200 */
+@media screen and (min-width:1200px){
+
+}

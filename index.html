@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- LINK STYLE CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- LINK MEDIA QUERIES CSS -->
+    <link rel="stylesheet" href="./css/mediaqueries.css">
     <title>Spotify</title>
 </head>
 
@@ -21,6 +23,7 @@
         <!-- ASIDE -->
         <aside>
 
+            <!-- TOP ASIDE -->
             <div class="top-aside">
                 <!-- LOGO -->
                 <img class="logo-small" src="./img/logo-small.svg" alt="logo spotify">
@@ -48,6 +51,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- PLAYLIST -->
                 <div class="playlist aside-hidden overflow-playlist">
                     <h4>PLAYLIST</h4>
                     <a href="#">
@@ -71,7 +75,7 @@
             <!-- BOTTOM ASIDE -->
             <div class="bottom-aside">
                 <a href="#">
-                    <img src="./img/download.svg" alt="download">
+                    <i class="far fa-arrow-alt-circle-down"></i>
                     <span class="aside-hidden ml-5">Installa app</span>
                 </a>
                 <hr class="aside-hidden">
@@ -80,22 +84,24 @@
                     <h3 class="aside-hidden ml-5">John Doe</h3>
                 </a>
             </div>
-
         </aside>
 
-        <!-- CONTAINER-CONTENT -->
-        <div class="container-content">
+        <!-- MAIN-CONTENT -->
+        <div class="main-content">
+
             <!-- UPGRADE BAR -->
             <div class="upgrade-bar">
                 <button>EFFETTUA L'UPGRADE</button>
             </div>
 
+            <!-- CONTAINER-OVERFLOW-MAIN-CONTENT -->
             <div class="container-overflow">
+
             </div>
         </div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER PLAYER -->
     <footer></footer>
 </body>
 </html>
