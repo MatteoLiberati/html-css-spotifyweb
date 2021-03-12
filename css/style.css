@@ -1,0 +1,23 @@
+/* MOBILE FIRST XS */
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MEDIA QUERIES */
+/* RESPONSIVE SM > 601 */
+@media screen and (min-width:601px){
+
+}
+
+/* RESPONSIVE MD > 768 */
+@media screen and (min-width:768px){
+
+}
+
+/* RESPONSIVE LG > 1200 */
+@media screen and (min-width:1200px){
+
+}
