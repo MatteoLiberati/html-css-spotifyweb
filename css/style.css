@@ -6,6 +6,59 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #a3a3a3;
+}
+
+/* UTILITIES */
+
+/* MAIN */
+main{
+    display: flex;
+    height: calc(100vh - 81px);
+}
+
+/* -ASIDE */
+aside{
+    width: 45px;
+    height: 100%;
+    background-color: red;
+    /* background-color: black; */
+}
+/* -CONTAINER-CONTENT */
+.container-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    /* background-color: #141922; */
+}
+
+/* --UPGRADE BAR */
+.upgrade-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 100%;
+    /* background-color: rgba(0,0,0,.10); */
+    background-color: purple;
+}
+
+.container-overflow{
+    height: 100%;
+    padding-top: 82px;
+    overflow-y: auto;
+}
+
+/* FOOTER */
+footer{
+    height: 81px;
+    background-color: green;
+    /* background-color: #282828; */
+}
+
 /* MEDIA QUERIES */
 /* RESPONSIVE SM > 601 */
 @media screen and (min-width:601px){
