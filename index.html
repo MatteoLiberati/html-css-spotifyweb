@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK FONTAWESOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous'/>
     <!-- LINK GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -11,29 +13,82 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
+
 <body>
     <!-- MAIN -->
     <main>
+        
         <!-- ASIDE -->
-        <aside></aside>
+        <aside>
+
+            <div class="top-aside">
+                <!-- LOGO -->
+                <img class="logo-small" src="./img/logo-small.svg" alt="logo spotify">
+                <img class="logo-big aside-hidden" src="./img/logo.svg" alt="complete logo spotify">
+                <!-- NAVBAR -->
+                <nav class="">
+                    <ul>
+                        <li class="aside-selected">
+                            <a href="#">
+                                <img src="./img/home.svg" alt="home">
+                                <span class="aside-hidden">Home</span>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#">
+                                <img src="./img/search.svg" alt="search">
+                                <span class="aside-hidden">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=#">
+                                <img src="./img/libreria.svg" alt="">
+                                <span class="aside-hidden">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="playlist aside-hidden overflow-playlist">
+                    <h4>PLAYLIST</h4>
+                    <a href="#">
+                        <button class="create-playlist">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        Crea Playlist
+                    </a>
+                    <ul>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                        <a href="#"><li>Nome Playlist</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BOTTOM ASIDE -->
+            <div class="bottom-aside">
+                <a href="#">
+                    <img src="./img/download.svg" alt="download">
+                    <span class="aside-hidden ml-5">Installa app</span>
+                </a>
+                <hr class="aside-hidden">
+                <a href="#">
+                    <img src="./img/profile.svg" alt="download">
+                    <h3 class="aside-hidden ml-5">John Doe</h3>
+                </a>
+            </div>
+
+        </aside>
+
         <!-- CONTAINER-CONTENT -->
         <div class="container-content">
             <!-- UPGRADE BAR -->
             <div class="upgrade-bar"></div>
-            
             <div class="container-overflow">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error rerum repudiandae dolorem! Possimus magni facilis atque? Impedit reprehenderit eum quae. Quia officia in nisi ea magnam mollitia, hic eum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore quaerat nemo voluptatibus perferendis, debitis eos soluta illum facere exercitationem veritatis beatae voluptas adipisci excepturi harum placeat enim provident quo.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum velit laboriosam est quis labore explicabo, impedit distinctio aliquam commodi quae numquam eum autem aliquid, ut quo deleniti aspernatur delectus quas!
             </div>
-            
-
-
         </div>
     </main>
 
