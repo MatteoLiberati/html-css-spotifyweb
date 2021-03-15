@@ -13,7 +13,8 @@ body{
 
 h2,
 h3,
-h4{
+h4,
+h5{
     color: #fff;
 }
 
@@ -293,7 +294,7 @@ aside .logo-big{
     color: #fff;
 }
 
-.container-overflow .card:hover .layover{
+.container-overflow .card .album-cover:hover .layover{
     opacity: 1;
 }
 
@@ -303,7 +304,133 @@ aside .logo-big{
 }
 
 /* FOOTER PLAYER*/
-footer{
+footer.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 81px;
     background-color: #282828;
+    font-size: .7rem;
+}
+
+.player-left,
+.player-right{
+    display:flex;
+    align-items: center;
+    width:280px;
+}
+
+/* -PLAYER LEFT */
+.player-left{
+    padding-right: 25px;
+}
+
+.player-left img{
+    margin: 0 1rem;
+    width: 35px;
+}
+
+.player-left .save-song{
+    margin-left: 1rem;
+}
+
+.player-left .save-song i{
+    padding: 2px 5px;
+    font-size: 1.1rem;
+    color: #a3a3a3;
+}
+
+.player-left a{
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.player-left a:hover,
+.player-left a:hover i{
+    color: #fff;
+}
+
+/* -PLAYER CENTER */
+.player-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+/* --PLAYER-COMMANDS */
+.player-center .player-commands{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.player-center .player-commands a{
+    color: #fff;
+}
+
+.player-center .player-commands a:first-child{
+    margin-right: 20px;
+}
+
+.player-center .player-commands a:last-child{
+    margin-left: 20px;
+}
+
+.player-center .player-commands a:nth-child(3){
+    font-size: 35px;
+    margin: 0 35px;
+    transition: transform .2s
+}
+
+.player-center .player-commands a:nth-child(3):hover{
+    transform:scale(1.1);
+}
+
+/* --TIME-SONG-BAR */
+.player-center .time-song-bar{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+}
+
+.player-center .time-bar{
+    position: relative;
+    margin: 0 5px;
+    width: 100%;
+    height: 3px;
+    background-color:#5a5a5a;
+    cursor: pointer;
+}
+
+.player-center .time-bar .time-passed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color:#c1c1c1;
+}
+
+.player-center .time-bar:hover .time-passed{
+    background-color:#adff2f;
+}
+
+.ball-time{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.player-center .time-bar:hover .ball-time{
+    opacity: 1;
 }
