@@ -31,11 +31,12 @@
 
     .top-aside .playlist,
     .bottom-aside{
-        padding: 0 15px;
+        padding: 10px 15px 0;
     }
 
+    /* BOTTOM ASIDE */
     .bottom-aside a:first-child i{
-        margin-bottom: 5px;
+    margin-bottom: 0;
     }
 
     /* -LOGO */
@@ -46,10 +47,17 @@
 
 /* RESPONSIVE MD > 768 */
 @media screen and (min-width:768px){
+    /* ---CARDS SECTIONS */
+    .main-content .card{
+    width: calc(100% / 4 - 15px);
+}
 
 }
 
 /* RESPONSIVE LG > 1200 */
 @media screen and (min-width:1200px){
-
+    /* ---CARDS SECTIONS */
+    .main-content .card{
+    width: calc(100% / 6 - 15px);
+}
 }
