@@ -308,9 +308,20 @@ footer.player{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
     height: 81px;
     background-color: #282828;
     font-size: .7rem;
+}
+
+.player a{
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.player i{
+    transition: color 0.2s;
 }
 
 .player-left,
@@ -326,7 +337,7 @@ footer.player{
 }
 
 .player-left img{
-    margin: 0 1rem;
+    margin-right: 1rem;
     width: 35px;
 }
 
@@ -340,14 +351,9 @@ footer.player{
     color: #a3a3a3;
 }
 
-.player-left a{
-    color: #a3a3a3;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
 .player-left a:hover,
-.player-left a:hover i{
+.player-left a:hover i,
+.player-right a:hover i{
     color: #fff;
 }
 
@@ -388,7 +394,6 @@ footer.player{
     transform:scale(1.1);
 }
 
-/* --TIME-SONG-BAR */
 .player-center .time-song-bar{
     display: flex;
     width: 100%;
@@ -406,16 +411,49 @@ footer.player{
     cursor: pointer;
 }
 
-.player-center .time-bar .time-passed{
+
+/* -PLAYER RIGHT */
+.player-right{
+    display: flex;
+    justify-content:flex-end;
+    padding-left: 25px;
+}
+
+.player-right i{
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+.player-right .coda{
+    position: relative;
+}
+
+.coda i:first-child{
+    position: absolute;
+    left: -8px;
+    font-size: 16px;
+}
+
+.player-right .volume-bar{
+    position: relative;
+    margin-left: 10px;
+    width: 100px;
+    height: 3px;
+    background-color:#5a5a5a;
+    cursor: pointer;
+}
+
+/* GENERAL BAR SETTING */
+.player .bar-active{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 20%;
     background-color:#c1c1c1;
+    transition: background-color .2s;
 }
 
-.player-center .time-bar:hover .time-passed{
+.player .bar:hover .bar-active{
     background-color:#adff2f;
 }
 
@@ -429,8 +467,13 @@ footer.player{
     border-radius: 50%;
     background-color: #fff;
     opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.player-center .time-bar:hover .ball-time{
+.player .bar:hover .ball-time{
     opacity: 1;
+}
+
+.player-right .bar-active{
+    width: 30%;
 }
