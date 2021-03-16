@@ -351,7 +351,7 @@ footer.player{
 
 /* -PLAYER LEFT */
 .player-left{
-    padding-right: 25px;
+    padding-right: 8px;
 }
 
 .player-left img{
@@ -395,21 +395,21 @@ footer.player{
 }
 
 .player-center .player-commands a:first-child{
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 .player-center .player-commands a:last-child{
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .player-center .player-commands a:nth-child(3){
     font-size: 35px;
-    margin: 0 35px;
+    margin: 0 30px;
     transition: transform .2s
 }
 
 .player-center .player-commands a:nth-child(3):hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 .player-center .time-song-bar{
@@ -434,27 +434,27 @@ footer.player{
 .player-right{
     display: flex;
     justify-content:flex-end;
-    padding-left: 25px;
+    padding-left: 8px;
 }
 
 .player-right i{
-    font-size: 1.1rem;
-    padding: 0 10px;
+    font-size: 0.9rem;
+    padding: 0 5px;
 }
-.player-right .coda{
+.player-right .queue{
     position: relative;
 }
 
-.coda i:first-child{
+.queue i:first-child{
     position: absolute;
-    left: -8px;
-    font-size: 16px;
+    left: -6px;
+    font-size: 0.9rem;
 }
 
 .player-right .volume-bar{
     position: relative;
     margin-left: 10px;
-    width: 100px;
+    width: 80px;
     height: 3px;
     background-color:#5a5a5a;
     cursor: pointer;

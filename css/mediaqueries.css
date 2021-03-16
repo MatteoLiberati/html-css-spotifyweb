@@ -61,3 +61,14 @@
     width: calc(100% / 6 - 15px);
 }
 }
+
+/* RESPONSIVE H < 600 */
+@media screen and (max-height:600px){
+    .upgrade-bar{
+        display: none;
+    }
+
+    .container-overflow{
+    padding: 20px 0 0 20px;
+    }
+}
