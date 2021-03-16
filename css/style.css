@@ -39,6 +39,12 @@ body ul{
     margin-left: 10px;
 }
 
+@keyframes pulse{
+    50%{
+        transform: scale(1.1);
+    }
+}
+
 /* MAIN */
 main{
     display: flex;
@@ -200,11 +206,10 @@ aside .logo-big{
     border-radius: 20px;
     background-color: rgba(0,0,0,.15);
     cursor: pointer;
-    transition: transform .2s
 }
 
 .upgrade-bar button:hover{
-    transform: scale(1.1);
+    animation: pulse .8s linear infinite;
 }
 
 /* --CONTAINER-OVERFLOW */
@@ -305,6 +310,10 @@ aside .logo-big{
 
 .container-overflow .card .album-cover:hover .layover{
     opacity: 1;
+}
+
+.container-overflow .card .album-cover:hover .layover i{
+    animation: pulse .8s linear infinite;
 }
 
 /* ---POPULAR ARTIST */
