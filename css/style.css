@@ -18,6 +18,10 @@ h5{
     color: #fff;
 }
 
+body ul{
+    list-style: none;
+}
+
 /* UTILITIES */
 .aside-hidden{
     display: none;
@@ -47,14 +51,11 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 5px;
     width: 55px;
     height: 100%;
     font-size: 0.8rem;
     background-color: black;
-}
-
-aside ul{
-    list-style: none;
 }
 
 aside a{
@@ -67,14 +68,23 @@ aside a:hover{
     color:#fff;
 }
 
-aside img{
+.top-aside img{
     width: 25px;
     margin: 4px 0;
 }
 
-aside a:hover img{
-    fill: white;
-    stroke: white;
+aside svg{
+    width: 25px;
+    margin: 4px 0;
+}
+
+aside svg path{
+    fill: #a3a3a3;
+    transition: fill .2s
+}
+
+aside a:hover svg path{
+    fill: #fff;
 }
 
 /* --TOP-ASIDE */
@@ -85,6 +95,7 @@ aside a:hover img{
     overflow-y: hidden;
     min-height: 260px;
 }
+
 /* ---LOGO */
 aside .logo-big{
     width: 120px;
@@ -126,7 +137,6 @@ aside .logo-big{
 }
 
 .top-aside .playlist ul{
-    list-style: none;
     line-height: 2rem;
 }
 
@@ -210,7 +220,6 @@ aside .logo-big{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    list-style: none;
 }
 
 .container-overflow nav ul a{
